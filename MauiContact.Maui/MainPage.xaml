@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiContact.Maui.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="image.jpg"
+                HeightRequest="450"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Task 1 " />
+
+            <Label
+                Text="Hello, MAUI!"
+                TextColor="BlueViolet"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Button
+                x:Name="NavigateToAboutBtn"
+                Text="Go to About Page"
+                Clicked="OnNavigateToAboutClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

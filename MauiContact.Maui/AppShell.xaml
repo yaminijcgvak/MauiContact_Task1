@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiContact.Maui.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiContact.Maui"
+    Shell.FlyoutBehavior="Disabled"
+    Title="MauiContact.Maui">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <ShellContent
+     Title="Layout"
+     ContentTemplate="{DataTemplate local:Layout}"
+     Route="Layout" />
+    <ShellContent
+     Title="About"
+     ContentTemplate="{DataTemplate local:About}"
+     Route="About" />
+    <ShellContent
+     Title="Home"
+     ContentTemplate="{DataTemplate local:TestCounter}"
+     Route="TestCounter" />
+
+</Shell>
