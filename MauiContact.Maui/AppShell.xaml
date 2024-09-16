@@ -6,7 +6,10 @@
     xmlns:local="clr-namespace:MauiContact.Maui"
     Shell.FlyoutBehavior="Disabled"
     Title="MauiContact.Maui">
-
+    <ShellContent 
+        Title="PeopleListPage"
+        ContentTemplate="{DataTemplate local:PeopleListPage}"
+        Route="PeopleListPage" />
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"

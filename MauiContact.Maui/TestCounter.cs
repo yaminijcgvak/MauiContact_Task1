@@ -1,4 +1,5 @@
 namespace MauiContact.Maui;
+#pragma warning disable CS8622 
 
 public class TestCounter : ContentPage
 {
@@ -31,6 +32,6 @@ public class TestCounter : ContentPage
     {
         count++;
         lblCounter.Text = $"Click Count {count} ";
-        SemanticScreenReader.Announce(lblCounter.Text); 
+        SemanticScreenReader.Announce(lblCounter.Text);
     }
 }
